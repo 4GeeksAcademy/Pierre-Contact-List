@@ -1,3 +1,143 @@
 /* 
     General Styles
 */
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+:root {
+  padding: 3rem 2rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.contact-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 2rem;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.new-contact-btn {
+  background-color: rgb(3, 114, 3);
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+.contact img {
+  width: 100px;
+  height: 100px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.contact-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.tools {
+  display: flex;
+  gap: .5rem;
+}
+
+.tools img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+
+/* Add new contact */
+
+.new-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 8rem 15rem;
+
+}
+
+.save {
+  background-color: blue;
+  color: #ffff;
+  font-weight: 300;
+  width: 100%;
+  width: 300pxs;
+}
+
+.contact-input {
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+  padding-top: .5rem;
+}
+
+.contact-input input {
+  padding: .5rem;
+  border-radius: .5rem;
+  outline: none;
+}
+
+.save {
+  width: 100px;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
+}
+
+/* Edit Contact */
+
+.edit-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  background-color: white; 
+  color: black;
+  border-radius: 1rem; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  box-shadow: 24;
+}
