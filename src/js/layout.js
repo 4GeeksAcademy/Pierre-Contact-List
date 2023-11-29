@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import injectContext from './store/appContext.js'
 
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Contacts from './components/Contacts';
-import NewContact from './components/NewContact';
-import EditContactList from './components/EditContact';
+import Contacts from './components/Contacts.jsx';
+import NewContact from './components/NewContact.jsx';
+import EditContactList from './components/EditContact.jsx';
 
 
 //create your first component

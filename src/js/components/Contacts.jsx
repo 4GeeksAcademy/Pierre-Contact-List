@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import Map from '../../img/map.svg'
 import { Link } from 'react-router-dom';
 import Modal from '@mui/material/Modal';
-import EditContactList from './EditContact';
+import EditContactList from './EditContact.jsx';
 
 const Contacts = () => {
   const [contactsList, setContactList] = useState([]);
@@ -55,26 +56,27 @@ const Contacts = () => {
             <div>
               <h1>{contact.full_name}</h1>
               <div className='contact-item'>
-                <img src='/map-pin.svg' alt='' />
+                <img src='https://uxwing.com/wp-content/themes/uxwing/download/location-travel-map/country-location-icon.png' alt='' />
                 <p>{contact.address}</p>
               </div>
               <div className='contact-item'>
-                <img src='/phone.svg' alt='' />
+                <img src='https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/accept-call-icon.png' alt='' />
                 <p>{contact.phone}</p>
               </div>
               <div className='contact-item'>
-                <img src='/mail.svg' alt='' />
+                <img src='https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/purple-mail-icon.png' alt='' />
                 <p>{contact.email}</p>
               </div>
             </div>
             <div className='tools'>
               <img
-                src='/edit.svg'
+                src='https://img.icons8.com/?size=256&id=18709&format=png'
                 alt=''
                 onClick={() => handleOpen(contact.id)}
               />
               <img
-                src='trash.svg'
+                src='https://img.icons8.com/?size=256&id=13086&format=png
+                '
                 alt=''
                 onClick={() => deleteContact(contact.id)}
               />
